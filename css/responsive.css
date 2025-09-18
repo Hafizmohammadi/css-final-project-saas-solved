@@ -1,0 +1,188 @@
+@media (min-width: 1024px) {
+  .nav-items .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .nav-items .icon {
+    display: block;
+  }
+
+  .nav-items li,
+  .cta-btn {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+  }
+
+  .main-container .text-section,
+  .main-container .image-section {
+    width: 100%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    display: none;
+  }
+
+  .hero-title-two {
+    display: block;
+    font-size: 25px;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .right-part {
+    position: static;
+  }
+
+  .google, .asana, .paypal, .weave, .googleads, .calendar {
+    position: static;
+    margin: 20px;
+    top: 0;
+    left: 0;
+    transform: none;
+    animation: none;
+  }
+
+  .main-content {
+    padding-top: 70px;
+  }
+
+  .why-font-section {
+    height: 354px;
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .section-two {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pricing-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 373px;
+    border: 1px solid #E2E2E2;
+    padding: 10px;
+    gap: 20px;
+    box-shadow: none;
+  }
+
+  .no-credit .no-credit-description {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pricing-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pricing {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .part-two {
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .cancel-part, .man-one, .image-part, .money-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .pricing-section {
+    padding-top: 5px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial .testimonial-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 240px;
+  }
+
+  .person-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .form {
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .top-section-content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    width: auto;
+  }
+
+  .Hero-section {
+    max-width: 100%;
+    align-items: center;
+  }
+
+
+  
+}

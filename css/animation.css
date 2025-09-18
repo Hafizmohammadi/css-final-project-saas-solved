@@ -1,0 +1,55 @@
+.cta-btn:hover {
+  background-color: #FFFFFF;
+  color: #2476FF;
+}
+
+.cta-button:hover {
+  background-color: #FFFFFF;
+  color: #2476FF;
+}
+
+.play-button:hover {
+  background-color: #FFFFFF;
+  color: #2476FF;
+}
+
+.sub-btn:hover{
+  background-color: #FFFFFF;
+  color: #2476FF;
+}
+
+a {
+  color: #677788;
+  text-decoration: none;
+  transition-delay: 1s;
+  transition-duration: 2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover {
+  color: #2476FF;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
