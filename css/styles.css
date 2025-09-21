@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: inter, roboto, san-serif;
+  font-family: inter, roboto, san-serif !important;
 }
 
 .header {
@@ -65,6 +65,7 @@ ul {
   transition-property: background-color, color;
   transition-timing-function: ease-in-out;
 }
+
 
 .main-container {
   display: flex;
@@ -379,8 +380,9 @@ ul {
 
 .pricing-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 50px;
+  gap: 200px;
 }
 
 .pricing-card {
@@ -679,8 +681,9 @@ ul {
 
 .footer-links {
   display: flex;
-  justify-content: space-around;
-  height: 246px;
+  justify-content: center;
+  gap: 50px;
+  height: auto;
   padding: 40px 30px;
 }
 

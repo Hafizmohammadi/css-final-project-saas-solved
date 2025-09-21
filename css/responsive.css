@@ -6,6 +6,12 @@
 
 @media (max-width: 1023px) {
 
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
   .nav-items .icon {
     display: block;
   }
@@ -19,8 +25,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 700px;
-    width: 100%;
+    height: auto;
+    width: auto;
+    padding: 70px;
+  }
+
+  .Hero-section {
+    height: auto;
+    width: auto;
   }
 
   .main-container .text-section,
@@ -47,16 +59,44 @@
   }
 
   .right-part {
-    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
   }
 
-  .google, .asana, .paypal, .weave, .googleads, .calendar {
-    position: static;
-    margin: 20px;
-    top: 0;
-    left: 0;
-    transform: none;
-    animation: none;
+  .google {
+    top: 20px;
+    left: -230px;
+  }
+
+  .attlasian {
+    top: 30px;
+    left: -30px;
+  }
+
+  .asana {
+    top: 25px;
+    left: 200px;
+  }
+
+  .paypal {
+    top: 130px;
+    left: -230px;
+  }
+
+  .weave {
+    top: 130px;
+  }
+
+  .googleads {
+    top: 250px;
+  }
+
+  .calendar {
+    top: 250px;
+    left: 140px;
   }
 
   .main-content {
@@ -64,26 +104,35 @@
   }
 
   .why-font-section {
-    height: 354px;
-    width: 100%;
+    height: auto;
+    width: auto;
     padding-bottom: 10px;
     margin: 0;
+  }
+
+  .feature-item::after {
+    width: auto;
+    right: 80px;
+    left: 80px;
+  }
+
+  .why-font-content {
+    padding-top: 50px;
   }
 
   .section-two {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .pricing-card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 373px;
+    width: 90%;
+    height: auto;
     border: 1px solid #E2E2E2;
-    padding: 10px;
+    padding: 20px;
     gap: 20px;
     box-shadow: none;
   }
@@ -96,16 +145,17 @@
   .pricing-section {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .pricing {
     flex-direction: column;
     width: 100%;
+    padding: 40px;
   }
 
   .part-two {
     grid-template-rows: repeat(2, auto);
+    width: 90%;
   }
 
   .cancel-part, .man-one, .image-part, .money-part {
@@ -117,13 +167,13 @@
 
   .pricing-section {
     padding-top: 5px;
+    gap: 60px;
   }
 
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .testimonial {
@@ -145,6 +195,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+    width: 30%;
+  }
+
+  .person-image {
+    padding-top: 20px;
   }
 
   .form {
@@ -153,36 +208,149 @@
     gap: 20px;
   }
 
+  .form-control input {
+    width: 100%;
+  }
+
+  .form-group-one {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .form-group-two .form-control input {
+    align-self: flex-start;
+    width: 83%;
+  }
+
+  .budget-country {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .form-control textarea {
+    width: 83%;
+  }
+
   .footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
 @media (max-width: 767px) {
+  
+  .google {
+    top: -20px;
+    left: -170px;
+  }
 
-  .top-section-content {
-    max-width: 100%;
+  .attlasian {
+    top: -10px;
+    left: -60px;
+  }
+
+  .asana {
+    top: 5px;
+    left: 90px;
+  }
+
+  .paypal {
+    top: 100px;
+    left: -180px;
+  }
+
+  .weave {
+    top: 120px;
+    left: 5px;
+  }
+
+  .calendar {
+    top: 210px;
+    left: 110px;
+  }
+
+  .section-content .features-grid {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: static;
+    gap: 0px;
+  }
+
+  .feature-item::after {
+    display: none;
+  }
+
+  .feature-item {
+    flex-direction: row;
+  }
+
+  .part-two {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-content {
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .main-container {
-    display: flex;
-    flex-direction: column;
+  .form-group-one {
+    gap: 20px;
+  }
+
+  .form-control textarea {
+    width: 100%;
+  }
+
+  .text-two {
+    display: none;
+  }
+
+  .person-info {
     align-items: center;
     text-align: center;
-    height: 600px;
+  }
+
+  .person-image {
+    height: auto;
+  }
+
+  .form {
+    border-radius: 10px;
+  }
+
+  .form-group-one {
+    flex-direction: column;
+  }
+
+  .budget-country {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group-two .form-control input {
     width: auto;
   }
 
-  .Hero-section {
-    max-width: 100%;
+  .footer-links {
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
+    gap: 10px;
   }
 
-
-  
+  .address {
+    align-items: center;
+  }
 }
